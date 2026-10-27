@@ -1,0 +1,595 @@
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #272624;
+    color: #2b2b2b;
+    min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(62, 2, 2);
+    border-bottom: 1px solid #e0afaf;
+}
+
+header h1 { margin: 0; font-size: 28px; 
+color: white;
+}
+header p { margin: 5px 0 0; color: #999595; }
+
+.catalog {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.catalog h2 { margin-top: 30px; color: #330404; }
+.catalog ul { list-style: none; padding-left: 0; }
+.catalog li { margin-bottom: 10px; }
+.catalog a { text-decoration: none; color: #4f050a; font-weight: bold; }
+.catalog a:hover { color: #390404; }
+
+.reader {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgb(223, 218, 223);
+    border-radius: 10px;
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+.reader p { text-indent: 30px; margin-bottom: 20px; }
+
+.controls { text-align: center; margin: 20px; }
+.controls button, .controls a {
+    margin: 5px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #440505;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+.controls button:hover, .controls a:hover { background-color: #450606; }
+
+
+body.dark { background-color: #1c1c1c; color: #e0e0e0; }
+body.dark header, body.dark .reader { background-color: #2a2a2a; }
+body.dark .controls button, body.dark .controls a { background-color: #555; }
+
+
+body {
+    margin: 0;
+}
+
+
+.catalog {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.main-image {
+    display: block;
+}
+
+
+.catalog h2 {
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px black;
+    margin-left: 20px;
+}
+
+
+.catalog ul {
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 20px;
+    width: 350px;
+    max-width: 90%;
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+}
+
+.catalog ul li {
+    margin: 15px 0;
+}
+
+.catalog ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px black;
+}
+
+.catalog ul li a:hover {
+    color: #600720;
+}
+
+
+/* Картинка на весь экран */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Показываем новую картинку */
+.main-image {
+      display: none;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.main-image img {
+     display: none;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Каталог поверх фоновой картинки */
+.catalog {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    box-sizing: border-box;
+    padding: 40px;
+    background-image: url("bookmood.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Названия книг слева */
+
+.catalog ul {
+    position: relative;
+    z-index: 1;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+
+.catalog ul {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.catalog h2 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.catalog ul {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 20px 35px;
+    border-radius: 12px;
+}
+
+.catalog ul li {
+    margin: 15px 0;
+}
+
+.catalog ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #060606;
+    margin-top: auto;
+    transform: translateY(100px);
+}
+.book-picture {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+.controls {
+    text-align: center;
+    margin: 20px;
+}
+
+.controls button,
+.controls a {
+    margin: 5px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #440505;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.controls button:hover,
+.controls a:hover {
+    background-color: #450606;
+}
+
+/* Цветовая гамма BookMood */
+body {
+    background-color: #fff8f0;
+    color: #38252b;
+    font-family: Arial, sans-serif;
+}
+
+/* Верхняя часть сайта */
+header {
+    background-color: #4d071d;
+    color: #fff8f0;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    color: #fff8f0;
+    margin-bottom: 10px;
+}
+
+/* Заголовки разделов */
+.catalog h2 {
+    color: #641f35;
+}
+
+/* Карточки книг */
+.book-card {
+    background-color: #450b0c;
+    color: #38252b;
+    border: 1px solid #ead9d1;
+    border-radius: 12px;
+}
+
+/* Кнопки */
+.genre-buttons button {
+    background-color: #f4ecec;
+    color: #641f35;
+    border: 1px solid #641f35;
+}
+
+.genre-buttons button:hover {
+    background-color: #641f35;
+    color: white;
+}
+
+.read-button {
+    background-color: #641f35;
+    color: white;
+}
+
+.read-button:hover {
+    background-color: #84354d;
+}
+
+/* Нижняя часть сайта */
+footer {
+    position: relative;
+    z-index: 5;
+    background-color: #4d071d;
+    color: #fff8f0;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    transform: none;
+}
+
+/* Кнопка каталога */
+.book-navigation {
+    background-color: #fff8f0;
+    padding: 15px 25px;
+    text-align: left;
+}
+
+.book-navigation button {
+    background-color: #4d071d;
+    color: #fff8f0;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book-navigation button:hover {
+    background-color: #641f35;
+}
+
+.catalog-hidden {
+    display: none !important;
+}
+#book-list {
+    display: none;
+}
+
+#book-list.catalog-show {
+    display: block;
+}
+
+/* Панель кнопок BookMood */
+.book-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #fff8f0;
+}
+
+.book-navigation button {
+    background-color: #4d071d;
+    color: #fff8f0;
+    border: 1px solid #641f35;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.book-navigation button:hover {
+    background-color: #641f35;
+}
+
+
+/* Панель категорий BookMood */
+.book-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px;
+    background-color: #fff8f0;
+}
+
+.book-navigation button {
+    background: #4d071d;
+    color: #fff8f0;
+    border: 1px solid #641f35;
+    border-radius: 8px;
+    padding: 11px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.book-navigation button:hover {
+    background-color: #84354d;
+}
+
+/* Главный заголовок */
+.bookmood-hero {
+    padding: 25px 20px;
+    color: #3e0606;
+    text-shadow: 1px 2px 5px #000;
+}
+
+.bookmood-hero h2 {
+    color: #3f0909;
+    font-size: 34px;
+}
+
+.bookmood-hero p {
+    font-size: 18px;
+}
+/* Поиск */
+.genre-search {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 18px;
+    background-color: #fff8f0;
+}
+
+.genre-search input {
+    width: 320px;
+    max-width: 65%;
+    padding: 12px;
+    border: 1px solid #641f35;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.genre-search button {
+    background-color: #641f35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+/* Карточки книг BookMood */
+.book-cards {
+    padding: 30px 20px;
+    background-color: #fff8f0;
+    color: #38252b;
+    text-align: center;
+}
+
+.book-cards h2 {
+    color: #4d071d;
+    font-size: 28px;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.book-card {
+    flex: 1;
+    min-width: 0;
+    max-width: 210px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.book-card {
+    width: 210px;
+    padding: 18px;
+    background-color: white;
+    border: 1px solid #ead9dc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+    text-align: center;
+}
+
+.book-cover {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d071d;
+    color: #fff8f0;
+    font-size: 65px;
+    border-radius: 8px;
+}
+
+.book-card h3 {
+    color: #4d071d;
+    font-size: 18px;
+}
+
+.book-card p {
+    color: #6b555b;
+}
+
+.book-card a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #4d071d;
+    color: #fff8f0;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.book-card a:hover {
+    background-color: #84354d;
+}
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.book-card {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.book-cover {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.book-card h3 {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+/* Большое меню каталога BookMood */
+.catalog-menu {
+    display: none;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    padding: 25px;
+    background-color: #fff8f0;
+    color: #38252b;
+    border-top: 2px solid #4d071d;
+}
+
+.catalog-menu.catalog-show {
+    display: grid;
+}
+
+.catalog-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.catalog-column h3 {
+    color: #4d071d;
+    font-size: 17px;
+    margin: 12px 0 5px;
+}
+
+.catalog-column a,
+.catalog-extra a {
+    color: #38252b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.catalog-column a:hover,
+.catalog-extra a:hover {
+    color: #9b3453;
+    text-decoration: underline;
+}
+
+.catalog-extra {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 20px;
+    border-top: 1px solid #e3cfd4;
+}
+
+@media (max-width: 800px) {
+    .catalog-menu {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .catalog-menu {
+        grid-template-columns: 1fr;
+    }
+}

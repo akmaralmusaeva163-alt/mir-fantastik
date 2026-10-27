@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>BookMood — Мир книг и настроения</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+
+<header>
+    <h1>✨BookMood </h1>
+    <p>Найдите свою историю✨</p>
+</header>
+
+<div class="bookmood-hero">
+    <h2>Найдите свою историю</h2>
+    <p>Выберите книгу по своему темпераменту</p>
+</div>
+
+<nav class="book-navigation">
+    <button onclick="toggleCatalog()">☰ Каталог</button>
+    <button onclick="document.getElementById
+    ('new-books').scrollIntoView({behavior: 'smooth'})"> Новинки</button>
+    <button onclick="document.getElementById
+    ('popular-books').scrollIntoView({behavior: 'smooth'})">Популярное</button>
+    <button>Любовные романы</button>
+    <button>Фантастика</button>
+    <button>Аудиокниги</button>
+    <button>Эксклюзив</button>
+    <button>Скидки</button>
+    <button>Психология</button>
+    <button>Бизнес</button>
+    <button>Детские</button>
+</nav>
+<div id="book-list" class="catalog-menu">
+
+    <div class="catalog-column">
+        <h3>Легкое чтение</h3>
+        <a href="#popular-books">Детективы</a>
+        <a href="#popular-books">Фантастика</a>
+        <a href="#popular-books">Фэнтези</a>
+        <h3>Серьезное чтение</h3>
+        <a href="#popular-books">Современная проза</a>
+        <a href="#popular-books">Классическая литература</a>
+        <a href="#popular-books">Биографии и мемуары</a>
+        <a href="#popular-books">Об истории серьезно</a>
+        <a href="#popular-books">Стихи, поэзия</a>
+        <a href="#popular-books">Все 6</a>
+
+        <h3>История</h3>
+        <a href="#popular-books">Историческое фэнтези</a>
+        <a href="#popular-books">Исторические приключения</a>
+        <a href="#popular-books">Книги о войне</a>
+        <a href="#popular-books">Книги о путешествиях</a>
+        <a href="#popular-books">Исторические любовные романы</a>
+        <a href="#popular-books">Все 12</a>
+    </div>
+
+    <div class="catalog-column">
+        <h3>Бизнес-книги</h3>
+        <a href="#popular-books">Менеджмент</a>
+        <a href="#popular-books">Работа с клиентами</a>
+        <a href="#popular-books">Стартапы и создание бизнеса</a>
+        <a href="#popular-books">Переговоры</a>
+        <a href="#popular-books">Ораторское искусство / риторика</a>
+        <a href="#popular-books">Все 31</a>
+
+        <h3>Знания и навыки</h3>
+        <a href="#popular-books">Научно-популярная литература</a>
+        <a href="#popular-books">Учебная и научная литература</a>
+        <a href="#popular-books">Компьютерная литература</a>
+        <a href="#popular-books">Культура и искусство</a>
+        <a href="#popular-books">Саморазвитие / личностный рост</a>
+        <a href="#popular-books">Все 10</a>
+
+        <h3>Психология, мотивация</h3>
+        <a href="#popular-books">Книги по психологии</a>
+        <a href="#popular-books">Культура и искусство</a>
+        <a href="#popular-books">Религия и духовная литература</a>
+        <a href="#popular-books">Саморазвитие / личностный рост</a>
+        <a href="#popular-books">Эзотерика</a>
+        <a href="#popular-books">Все 7</a>
+    </div>
+
+    <div class="catalog-column">
+        <h3>Спорт, здоровье, красота</h3>
+        <a href="#popular-books">Секс / секс-руководства</a>
+        <a href="#popular-books">Красота</a>
+        <a href="#popular-books">Спорт</a>
+        <a href="#popular-books">Медицина и здоровье</a>
+        <a href="#popular-books">Хобби, досуг</a>
+        <a href="#popular-books">Отдых / туризм</a>
+        <a href="#popular-books">Хобби / увлечения</a>
+        <a href="#popular-books">Охота</a>
+        <a href="#popular-books">Мода и стиль</a>
+        <a href="#popular-books">Автомобили и ПДД</a>
+        <a href="#popular-books">Все 19</a>
+
+        <h3>Дом, дача</h3>
+        <a href="#popular-books">Отдых / туризм</a>
+        <a href="#popular-books">Интерьеры</a>
+        <a href="#popular-books">Хобби / увлечения</a>
+        <a href="#popular-books">Охота</a>
+        <a href="#popular-books">Фэншуй / фэн-шуй</a>
+        <a href="#popular-books">Все 16</a>
+    </div>
+
+    <div class="catalog-column">
+        <h3>Детские книги</h3>
+        <a href="#popular-books">Зарубежные детские книги</a>
+        <a href="#popular-books">Детские стихи</a>
+        <a href="#popular-books">Детские детективы</a>
+        <a href="#popular-books">Детская фантастика</a>
+        <a href="#popular-books">Детские приключения</a>
+        <a href="#popular-books">Все 15</a>
+
+        <h3>Родителям</h3>
+        <a href="#popular-books">Детская психология</a>
+        <a href="#popular-books">Воспитание детей</a>
+        <a href="#popular-books">Здоровье детей</a>
+
+        <h3>Публицистика и периодические издания</h3>
+        <a href="#popular-books">Периодические издания</a>
+        <a href="#popular-books">Публицистическая литература</a>
+
+        <h3>Зарубежная литература</h3>
+        <a href="#popular-books">Зарубежная деловая литература</a>
+        <a href="#popular-books">Зарубежная справочная литература</a>
+        <a href="#popular-books">Зарубежная компьютерная литература</a>
+        <a href="#popular-books">Зарубежная психология</a>
+        <a href="#popular-books">Зарубежные детективы</a>
+        <a href="#popular-books">Все 24</a>
+    </div>
+
+    <div class="catalog-extra">
+        <a href="#popular-books">Книги в процессе</a>
+        <a href="#popular-books">Эксклюзивы</a>
+        <a href="#popular-books">Вебтуны</a>
+        <a href="#popular-books">Фанфики</a>
+        <a href="#popular-books">Бесплатные книги</a>
+    </div>
+
+</div>
+
+<div class="genre-search">
+    <input
+        type="text"
+        id="book-search"
+        placeholder="Введите название книги или жанр">
+    <button onclick="searchBooks()">Найти</button>
+</div>
+
+<p id="search-message"></p>
+
+
+<section class="catalog">
+<div class="main-image">
+     <img src="bookmood.png" alt="Книги и цветы — BookMood">
+</div>
+   
+</section>
+
+<section class="book-cards" id="popular-books">
+    <h2>Популярные книги</h2>
+
+    <div class="books-container">
+
+        <div class="book-card">
+            <div class="book-cover">📖</div>
+            <h3>Мара и Морок</h3>
+            <p>Лия Арден</p>
+            <a href="mara-morok.html">Читать →</a>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">🌙</div>
+            <h3>Мара и Морок: Особенная тень</h3>
+            <p>Лия Арден</p>
+            <a href="mara-shadow-prequel.html">Читать →</a>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">🌹</div>
+            <h3>Мара и Морок: 500 лет назад</h3>
+            <p>Лия Арден</p>
+            <a href="mara-500-years.html">Читать →</a>
+            </div>
+        <div class="book-card">
+            <div class="book-cover">🌿</div>
+            <h3>Морана и Тень: Плетущая</h3>
+            <p>Фантастика</p>
+            <a href="morana-weaver.html">Читать →</a>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">🌙</div>
+            <h3>Морана и Тень: Видящий</h3>
+            <p>Фантастика</p>
+            <a href="morana-seer.html">Читать →</a>
+       
+
+        </div>
+
+    </div>
+</section>
+<section class="book-cards" id="new-books">
+    <h2>✨ Новинки BookMood</h2>
+
+    <div class="books-container">
+
+        <div class="book-card">
+            <div class="book-cover">🕊</div>
+            <h3>Четвёртое крыло</h3>
+            <p>Ребекка Яррос</p>
+            <a href="https://www.google.com/search?q=Четвёртое+крыло+Ребекка+Яррос+книга"
+               target="_blank" rel="noopener noreferrer">Читать →</a>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">🧙‍♂️🧙‍♀️</div>
+            <h3>Божественные соперники</h3>
+            <p>Ребекка Росс</p>
+            <a href="https://www.google.com/search?q=Божественные+соперники+Ребекка+Росс+книга"
+               target="_blank" rel="noopener noreferrer">Читать →</a>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">🌹</div>
+            <h3>Королевство шипов и роз</h3>
+            <p>Сара Дж. Маас</p>
+            <a href="https://www.google.com/search?q=Королевство+шипов+и+роз+Сара+Дж+Маас+книга"
+               target="_blank" rel="noopener noreferrer">Читать→</a>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">✨</div>
+            <h3>Из крови и пепла</h3>
+            <p>Дженнифер Л. Арментроут</p>
+            <a href="https://www.google.com/search?q=Из+крови+и+пепла+Арментроут+книга"
+               target="_blank" rel="noopener noreferrer">Читать →</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Мир Фантастик </p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
